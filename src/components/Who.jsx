@@ -22,7 +22,7 @@ const About = () => {
         <span className="section-label">Aliph Technologies</span>
         <h2>Who We Are</h2>
         <p className="about-highlight">
-          Aliph Technologies is a value-driven systems integrator that assists
+          Sublime squares is a value-driven systems integrator that assists
           its clients in improving service quality and security, becoming more
           efficient, and creating a better end-user experience by providing
           cutting-edge solutions that are carefully crafted, reused, and
@@ -36,7 +36,7 @@ const About = () => {
           environment for assembling, staging, testing, dispatching, and
           installation of solutions and equipment.
         </p>
-        <button className="about-button">More About Aliph</button>
+       <a href="#features"><button className="about-button">More About Us</button></a>
       </div>
     </section>
   );

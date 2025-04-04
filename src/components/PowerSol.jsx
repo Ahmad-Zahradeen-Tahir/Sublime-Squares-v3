@@ -1,6 +1,7 @@
 import React from "react";
 import "./PowerSol.css";
 import panel from "../assets/panel.jpg";
+import { Link } from "react-router-dom";
 
 const PowerSol = () => {
   return (
@@ -24,9 +25,9 @@ const PowerSol = () => {
           consulting and optimization to reduce costs and carbon footprints
           through strategic energy audits.
         </p>
-        <a href="#" className="learn-more">
+        <Link to="/about" className="learn-more">
           Learn More
-        </a>
+        </Link>
       </div>
     </section>
   );

@@ -27,7 +27,7 @@ const Hero = () => {
             We <strong>DESIGN</strong> Products by <strong>OPTIMIZING</strong>{" "}
             <strong>Technology</strong> avec <strong>Creativity</strong>!
           </p>
-          <button className="cta-button">Discover More</button>
+          <a href="#who" className="cta-button">Discover More</a>
         </div>
 
         <div className="wave-divider">
@@ -40,10 +40,10 @@ const Hero = () => {
           </svg>
         </div>
       </section>
-      <section>
+      <section id="who">
         <Who />
       </section>
-      <section>
+      <section id="features">
         <Features />
       </section>
       <section>

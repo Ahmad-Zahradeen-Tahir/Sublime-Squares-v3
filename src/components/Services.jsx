@@ -1,84 +1,81 @@
 import React from "react";
-import { Server, Code, Shield, HelpingHand, BatteryCharging, HouseWifi, } from "lucide-react";
+import { Server, Code, Shield, HelpingHand, BatteryCharging, HouseWifi, ServerIcon, } from "lucide-react";
 import "./Services.css";
+import { Link } from "react-router-dom";
 
 const services = [
   {
     icon: <Server className="inIcon"/>,
     title: "IT Infrastructure",
     items: [
-      "Network Infrastructure",
-      "Internet Connectivity",
-      "Data Centre Infrastructure",
-      "Customized Enterprise",
-      "Cloud Solutions",
+      "IT System Design",
+      "Network Architecture ",
+      "Cloud Solutions & Data Management",
+      "Cybersecurity & Risk Management",
       "Systems Integration",
+      "Performance Optimization ",
     ],
   },
   {
     icon: <Shield className="inIcon"/>,
-    title: "Security & Safety",
+    title: "Security & Safety Systems",
     items: [
-      "IP CCTV Surveillance",
-      "Analog CCTV",
+      "Comprehensive Security Solutions",
+      "Surveillance Systems",
       "Access Control",
-      "Intrusion Detection",
-      "Fire Alarm",
-      "Entry Security",
-      "Perimeter Fence Security",
-      "Control Room Systems",
+      "Fire Detection Systems",
+      "Fire Suppression Solutions",
+      "Emergency Response Technology ",
+      "Cybersecurity Infrastructure",
+      "Threat Detection & Monitoring",
     ],
   },
   {
     icon: <BatteryCharging className="inIcon"/>,
-    title: "Power Solutions",
+    title: "Renewable Energy Solutions",
     items: [
-      "Solar Power Backup System",
-      "Power Inverter Solutions",
-      "Battery Power Backup System",
-      "Uninterruptible Power Supply (UPS) Solutions",
-      "Standby Power Generator",
+      "Sustainable Energy Solutions",
+      "Solar Power Systems",
+      "Hybrid Energy Integration",
+      "Energy Storage Solutions ",
+      "Energy Audits & Optimization",
     ],
   },
   {
     icon: <Code className="inIcon"/>,
-    title: "Web & App Solution",
+    title: "Support & Maintenance",
     items: [
-      "Visual Design",
-      "SEO (Search Engine Optimization)",
-      "Payment Gateway Integration",
-      "Responsivity",
-      "Live Call/Chat",
-      "Social Media Integration",
-      "Translator",
-      "Custom Emails",
-      "Management",
-    ],
-  },
-  {
-    icon: <HouseWifi className="inIcon"/>,
-    title: "Smart Building System",
-    items: [
-      "Access Control",
-      "SIP/IP Intercom",
-      "Integrated Alarm/Monitoring",
-      "Cloud Service Platform",
-      "Smart Home",
-      "Energy Management",
-      "Lift Management System",
-      "Nurse Call System",
+      "IT System Maintenance",
+      "Renewable Energy System Maintenance",
+      "Security & Surveillance System Support",
+      "Software Updates and Patches",
+      "Hardware Diagnostics and Repairs",
+      "Emergency IT and Engineering Support",
+      "System Performance Monitoring",
     ],
   },
   {
     icon: <HelpingHand className="inIcon"/>,
-    title: "Consultancy & Training",
+    title: "Training & Development",
     items: [
-      "Project Management",
-      "IT & Telecom Assessment",
-      "TEMs Analysis",
-      "Quality Assurance, Management & Audit",
-      "IS Studies/Security",
-      "IT Training",
+      "IT & Cybersecurity Best Practices",
+      "Renewable Energy System Deployment",
+      "Engineering & Technical Skills Development",
+      "Solar Power Installation and Maintenance",
+      "Energy Management Techniques",
+      "Automation and System Integration",
+    ],
+  },
+  {
+    icon: <ServerIcon className="inIcon"/>,
+    title: "Research & Innovation",
+    items: [
+      "Data Collection & Analysis for Engineering Solutions",
+      "Product Development & System Enhancements",
+      "Policy Recommendations & Advisory Services",
+      "Feasibility Studies & Market Research",
+      "Real-time Data Utilization for Infrastructure Planning",
+      "Energy Efficiency Optimization",
     ],
   },
 ];
@@ -100,7 +97,7 @@ const Services = () => {
           </div>
         ))}
       </div>
-      <button className="view-services">View Services</button>
+      <Link to="/services"><button className="view-services">View Services</button></Link>
     </section>
   );
 };

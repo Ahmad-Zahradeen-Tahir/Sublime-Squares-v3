@@ -71,9 +71,9 @@ const About = () => {
         <div data-aos="fade-right" className="mission">
           <h3>Our Mission</h3>
           <p>
-            Our Mission at Aliph Technology is to provide converged and quality
-            IT services through innovation, professionalism and partnership in a
-            cost-effective manner.
+            To solve complex engineering and technology challenges through
+            data-driven research, innovation, and sustainable solutions,
+            improving efficiency and security across industries.
           </p>
           <ul className="m-list">
             <li>
@@ -102,9 +102,8 @@ const About = () => {
         <div data-aos="fade-left" className="mission">
           <h3>Our vision</h3>
           <p>
-            Our Mission at Aliph Technology is to provide converged and quality
-            IT services through innovation, professionalism and partnership in a
-            cost-effective manner.
+            To be a leader in technology-driven engineering, pioneering smart,
+            secure, and sustainable solutions for global challenges.
           </p>
           <ul className="m-list">
             <li>
