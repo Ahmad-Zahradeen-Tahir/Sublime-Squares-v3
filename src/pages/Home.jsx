@@ -5,7 +5,7 @@ import "aos/dist/aos.css";
 import "./Home.css";
 import Features from "../components/Features";
 import Services from "../components/Services";
-import PowerSol from "../components/powerSol";
+import PowerSol from "../components/PowerSol";
 
 const Hero = () => {
   useEffect(() => {
