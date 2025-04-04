@@ -1,17 +1,23 @@
-import React from "react";
-import Who from "../components/Who"
+import Who from "../components/Who";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import "./Home.css";
 import Features from "../components/Features";
 import Services from "../components/Services";
 import PowerSol from "../components/powerSol";
 
 const Hero = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1000 }); // Adjust duration as needed
+  }, []);
+
   return (
     <>
       <section className="hero">
         <div className="overlay"></div>
 
-        <div className="hero-content">
+        <div data-aos="fade-up" className="hero-content">
           <h1>
             <span className="highlight">A Solution-oriented</span>
             <br />

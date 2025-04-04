@@ -1,4 +1,6 @@
-import React from "react";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import "./About.css";
 import {
   CheckCircle,
@@ -9,6 +11,9 @@ import {
 } from "lucide-react";
 
 const About = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1000 }); // Adjust duration as needed
+  }, []);
   return (
     <>
       <section className="ahead">
@@ -63,7 +68,7 @@ const About = () => {
         </div>
       </section>
       <section className="us">
-        <div className="mission">
+        <div data-aos="fade-right" className="mission">
           <h3>Our Mission</h3>
           <p>
             Our Mission at Aliph Technology is to provide converged and quality
@@ -94,7 +99,7 @@ const About = () => {
             </li>
           </ul>
         </div>
-        <div className="mission">
+        <div data-aos="fade-left" className="mission">
           <h3>Our vision</h3>
           <p>
             Our Mission at Aliph Technology is to provide converged and quality
@@ -129,7 +134,7 @@ const About = () => {
       <section className="values">
         <div className="v1">
           <div>
-            <div className="v1container">
+            <div data-aos="fade-right" className="v1container">
               <h2>
                 Company Values <br />& Vision
               </h2>
@@ -141,7 +146,7 @@ const About = () => {
           <div className="overlay"></div>
         </div>
         <div className="v3">
-          <div className="val">
+          <div data-aos="fade-left" className="val">
             <div className="valIcon">
               <div className="valicont">
                 <Star />
@@ -152,7 +157,7 @@ const About = () => {
               <span>We care about people</span>
             </div>
           </div>
-          <div className="val">
+          <div data-aos="fade-left" className="val">
             <div className="valIcon">
               <div className="valicont">
                 <Lightbulb />
@@ -163,7 +168,7 @@ const About = () => {
               <span>We have integrity</span>
             </div>
           </div>
-          <div className="val">
+          <div data-aos="fade-left" className="val">
             <div className="valIcon">
               <div className="valicont">
                 <Hourglass />
@@ -176,7 +181,7 @@ const About = () => {
           </div>
         </div>
       </section>
-      <section className="partners">
+      <section data-aos="fade-up" className="partners">
         <h2>Our Global Partners</h2>
         <p>
           We work with a trusted, select group of partners to provide you with

@@ -1,17 +1,24 @@
-import React from "react";
 import "./Who.css";
 import img from "../assets/image.jpg"
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const About = () => {
+
+  useEffect(() => {
+    AOS.init({ duration: 1000 }); // Adjust duration as needed
+  }, []);
+
   return (
     <section className="about">
       {/* Left Side: Image Container */}
-      <div className="about-image">
+      <div data-aos="fade-right" className="about-image">
         <img src={img} alt="Company Overview" />
       </div>
 
       {/* Right Side: Text Content */}
-      <div className="about-content">
+      <div data-aos="fade-left" className="about-content">
         <span className="section-label">Aliph Technologies</span>
         <h2>Who We Are</h2>
         <p className="about-highlight">

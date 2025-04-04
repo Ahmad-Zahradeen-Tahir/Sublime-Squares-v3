@@ -1,4 +1,6 @@
-import React from "react";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import panel from "../assets/panel.jpg";
 import infra from "../assets/infra.jpg";
 import security from "../assets/security.jpg";
@@ -44,6 +46,11 @@ const OurServices = () => {
       flip: false,
     },
   ];
+
+  useEffect(() => {
+    AOS.init({ duration: 1000 }); // Adjust duration as needed
+  }, []);
+
   return (
     <>
       <h2 className="ourS">Our Services</h2>
@@ -53,6 +60,7 @@ const OurServices = () => {
           className={
             service.flip ? "power-solutions fliper" : "power-solutions"
           }
+          data-aos={service.flip? "fade-right" : "fade-left"}
         >
           <div className="image-container">
             <img
