@@ -1,6 +1,6 @@
 import React from "react";
 import logo from "../assets/sublime-logo.png";
-import { Facebook, Twitter, Instagram, Linkedin, Mail, Phone, Map } from "lucide-react";
+import { MessageCircle, Twitter, Instagram, Linkedin, Mail, Phone, Map } from "lucide-react";
 import "./Footer.css"; // Make sure to create and import this CSS file
 
 const Footer = () => {
@@ -32,16 +32,16 @@ const Footer = () => {
 
           {/* Social Media Icons */}
           <div className="social-icons">
-            <a href="#">
-              <Facebook />
+            <a href="https://wa.link/lqkydp">
+              <MessageCircle />
             </a>
-            <a href="#">
+            <a href="https://x.com/sublimesquares?s=21">
               <Twitter />
             </a>
-            <a href="#">
+            <a href="https://x.com/sublimesquares?s=21">
               <Instagram />
             </a>
-            <a href="#">
+            <a href="https://x.com/sublimesquares?s=21">
               <Linkedin />
             </a>
           </div>
