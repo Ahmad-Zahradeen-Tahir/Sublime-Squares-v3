@@ -117,10 +117,10 @@ const Navbar = () => {
 
       {navOpen && newNav}
 
-      {/* Floating Message Button */}
+      {/* Floating Message Button
       <button className="floating-btn">
         <Mail />
-      </button>
+      </button> */}
     </>
   );
 };
