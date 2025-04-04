@@ -1,0 +1,20 @@
+.ourS {
+  text-align: center;
+  font-size: 2.7rem;
+  margin-top: 5rem;
+  margin-bottom: 6rem;
+}
+
+.fliper {
+  flex-direction: row-reverse;
+}
+
+.fliper .power-image {
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+.fliper .text-container {
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }

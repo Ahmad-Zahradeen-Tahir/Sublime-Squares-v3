@@ -1,0 +1,122 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navbar */
+.navbar {
+  padding: 20px 0; /* Increased vertical padding */
+  z-index: 9999999;
+  width: 100%;
+  background-color: transparent;
+  position: fixed;
+  transition: .3s;
+}
+
+.workingNav {
+  border-bottom: 1px solid green;
+  background: rgba(0, 0, 0, 0.285); /* Light transparency */
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 10px rgba(0, 220, 0, 0.7);
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  height: 100px; /* Increased navbar height */
+}
+
+/* Logo Section */
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo-img {
+  height: 70px; /* Made the logo bigger */
+}
+
+.logo-text {
+  font-size: 2rem; /* Enlarged text */
+  font-weight: bold;
+  color: white;
+}
+
+/* Navigation Links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 60px;
+}
+
+.nav-links li {
+  font-size: 0.5rem; /* Bigger font */
+}
+
+/* Underline Hover Effect */
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  font-size: 0.5rem;
+  position: relative;
+  padding-bottom: 5px;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-links a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 3px;
+  background: green;
+  transition: width 0.3s ease-in-out;
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+.nav-links .active {
+  color: green;
+  font-weight: 700;
+}
+
+.nav-links .active::after {
+  width: 100%;
+}
+
+/* Floating Button */
+.floating-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: green;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 70px; /* Made button bigger */
+  height: 70px;
+  font-size: 2rem; /* Bigger icon */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  z-index: 99999;
+  transition: .2s;
+}
+
+.floating-btn:hover{
+  scale: 1.1;
+}

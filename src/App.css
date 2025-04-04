@@ -1,0 +1,26 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+/* Apply Font to Entire Page */
+body {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Headings - Bolder & More Professional */
+h1, h2, h3 {
+  font-weight: 700;
+}
+
+/* Navigation Links */
+.nav-links a {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+/* Logo Text */
+.logo-text {
+  font-weight: 700;
+}

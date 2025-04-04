@@ -1,0 +1,93 @@
+/* Import font if not already done */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+.hero {
+  position: relative;
+  height: 100vh;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  background: url('../assets/hero.jpg') no-repeat center center/cover;
+  display: flex;
+  padding: 0 5%;
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  top: 18rem;
+  left: 6rem;
+  z-index: 2;
+  max-width: 700px;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  line-height: 1.3;
+}
+
+.hero-content .highlight {
+  color: rgb(0, 242, 0);
+}
+
+.hero-content p {
+  font-size: 1.3rem;
+  font-weight: 400;
+  margin-bottom: 50px;
+}
+
+.cta-button {
+  background: linear-gradient(to right, rgb(0, 242, 0), green);
+  width: 200px;
+  color: white;
+  font-size: 1rem;
+  padding: 15px 35px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+/* Wave Divider */
+.wave-divider {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  z-index: 2;
+}
+
+.wave-divider svg {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100px;
+}
+
+@media (max-width: 768px) {
+    .hero-content h1 {
+      font-size: 2.2rem;
+    }
+  
+    .hero-content p {
+      font-size: 1rem;
+    }
+  
+    .cta-button {
+      font-size: 1rem;
+      padding: 12px 25px;
+    }
+  }

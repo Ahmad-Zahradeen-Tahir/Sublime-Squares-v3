@@ -1,0 +1,135 @@
+.contact {
+  position: relative;
+  height: 75vh;
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  background: url("../assets/asia.jpg") no-repeat center center/cover;
+  display: flex;
+  overflow: hidden;
+}
+
+.req{
+    text-align: center;
+    padding: 4rem;
+    background: #dae2ae;
+}
+
+.req h2{
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.req h2 span {
+    font-size: 2rem;
+    color: green;
+}
+
+.support-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7rem;
+    background: #f5f5f5;
+  }
+  
+  .support-details {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .support-item {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .support-icon svg{
+    width: 40px;
+    height: 40px;
+    color: green;
+  }
+  
+  .support-title {
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .support-text {
+    margin: 5px 0 0;
+    color: #444;
+  }
+  
+  .support-form {
+    width: 55%;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .support-response {
+    text-align: right;
+    font-style: italic;
+    color: #777;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .support-label {
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  .support-required {
+    color: red;
+  }
+  
+  .support-input,
+  .support-textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .support-textarea {
+    min-height: 100px;
+  }
+  
+  .support-button {
+    margin-top: 15px;
+    background: green;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .support-button:hover {
+    background: rgb(0, 90, 0);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .support-wrapper {
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+  
+    .support-details, .support-form {
+      width: 100%;
+    }
+  
+    .support-form {
+      margin-top: 20px;
+    }
+  }  
