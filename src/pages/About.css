@@ -81,6 +81,7 @@
 
 .quote h3 {
   color: white;
+  text-align: center;
   font-size: 1.5rem;
 }
 
@@ -90,6 +91,10 @@
   align-items: center;
   gap: 1rem;
   color: green;
+}
+
+.mention span{
+  text-align: center;
 }
 
 .l-men {
@@ -166,6 +171,7 @@
 .values > div {
   flex: 1;
   height: 34rem;
+  width: 100%;
 }
 
 .v1 {
@@ -192,12 +198,9 @@
 
 .v2 {
   position: relative;
-  height: 200px;
-  color: #fff;
   font-family: "Inter", sans-serif;
   background: url("../assets/hero.jpg") no-repeat center center/cover;
-  display: flex;
-  overflow: hidden;
+  border: 1px solid red;
 }
 
 .v3 {
@@ -274,4 +277,50 @@
     margin: 0 auto;
     font-size: 20px;
     font-weight: 100;
+}
+
+@media (max-width: 768px){
+  .ahead{
+    height: 75vh;
+  }
+
+  .head-content p{
+    display: none;
+  }
+
+  .us{
+    flex-direction: column;
+    padding: 1rem;
+    gap: 4rem;
+  }
+
+  .mission{
+  }
+
+  .mission > p{
+    width: 100%;
+  }
+
+  .values{
+    flex-direction: column;
+    gap: 3rem;
+  }
+  
+  .m-list{
+    width: 100%;
+    text-align: center;
+  }
+
+  .v2{
+    display: none;
+  }
+
+  .v3 {
+    transform: translateX(-20px);
+    gap: 2rem;
+  }
+
+  .val{
+    gap: 1rem;
+  }
 }

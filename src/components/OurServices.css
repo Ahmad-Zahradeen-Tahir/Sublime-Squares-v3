@@ -5,6 +5,10 @@
   margin-bottom: 6rem;
 }
 
+.power-solutions{
+  transition: .3s !important; 
+}
+
 .fliper {
   flex-direction: row-reverse;
 }
@@ -17,4 +21,10 @@
 .fliper .text-container {
     border-top-right-radius: 0px;
     border-bottom-right-radius: 0px;
+  }
+
+  @media (max-width: 768px){
+    .fliper{
+      flex-direction: column;
+    }
   }

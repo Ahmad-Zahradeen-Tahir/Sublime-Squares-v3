@@ -30,7 +30,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 7rem;
-    background: #f5f5f5;
+    background: white;
   }
   
   .support-details {
@@ -119,14 +119,31 @@
   
   /* Responsive Design */
   @media (max-width: 768px) {
+    .contact{
+      background: url("../assets/blok.jpg") no-repeat center center/cover;
+    }
+    .head-content{
+      margin-top: 5rem;
+    }
     .support-wrapper {
       flex-direction: column;
       align-items: center;
-      padding: 20px;
+      padding: 10px;
     }
   
     .support-details, .support-form {
       width: 100%;
+      align-items: center;
+    }
+
+    .support-item{
+      align-items: center;
+    }
+
+    .support-item > div{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
   
     .support-form {

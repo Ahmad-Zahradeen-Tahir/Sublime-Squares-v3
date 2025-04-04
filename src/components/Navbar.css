@@ -26,7 +26,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 90%;
+  width: 100%;
   max-width: 1200px;
   margin: auto;
   height: 100px; /* Increased navbar height */
@@ -60,6 +60,22 @@
   font-size: 0.5rem; /* Bigger font */
 }
 
+.nav-links li:last-child{
+  display: none;
+}
+
+.nav-links li:last-child button{
+  background: transparent;
+  border: 2px solid green;
+  cursor: pointer;
+}
+
+.nav-links li:last-child button svg{
+  width: 40px;
+  height: 40px;
+  color: white;
+}
+
 /* Underline Hover Effect */
 .nav-links a {
   text-decoration: none;
@@ -85,11 +101,6 @@
 
 .nav-links a:hover::after {
   width: 100%;
-}
-
-.nav-links .active {
-  color: green;
-  font-weight: 700;
 }
 
 .nav-links .active::after {
@@ -119,4 +130,82 @@
 
 .floating-btn:hover{
   scale: 1.1;
+}
+
+.new-nav{
+  position: fixed;
+  top: 20vh;
+  z-index: 99999;
+  width: 100%;
+  height: 80vh;
+  background: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.new-links{
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+}
+
+.new-links a{
+  font-size: 2rem;
+  color: white;
+  text-decoration: none;
+}
+
+/* Underline Hover Effect */
+.new-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  position: relative;
+  padding-bottom: 5px;
+  transition: color 0.3s ease-in-out;
+}
+
+.new-links a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 3px;
+  background: green;
+  transition: width 0.3s ease-in-out;
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+}
+
+.new-links a:hover::after {
+  width: 100%;
+}
+
+.new-links .active::after {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  
+  .logo-text{
+    font-size: 1.5rem;
+  }
+
+  .nav-links li{
+    display: none;
+  }
+
+  .nav-links li:last-child{
+    display: block;
+
+  }
+
+  .floating-btn{
+    display: none;
+  }
 }
