@@ -19,7 +19,7 @@ const About = () => {
 
       {/* Right Side: Text Content */}
       <div data-aos="fade-left" className="about-content">
-        <span className="section-label">Aliph Technologies</span>
+        <span className="section-label">Sublime Squares</span>
         <h2>Who We Are</h2>
         <p className="about-highlight">
           Sublime squares is a value-driven systems integrator that assists
