@@ -150,7 +150,7 @@ form {
   z-index: 9999;
 }
 
-.sent h3 {
+.not-sent h3 {
   border-bottom: 3px solid red;
   z-index: 9999;
 }

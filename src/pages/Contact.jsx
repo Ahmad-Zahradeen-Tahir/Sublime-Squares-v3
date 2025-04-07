@@ -127,7 +127,7 @@ const Contact = () => {
                 required
                 className="support-input"
                 placeholder="Enter full name"
-                name="user_name"
+                name="name"
               />
 
               <label className="support-label">
@@ -140,7 +140,7 @@ const Contact = () => {
                 className="support-input"
                 placeholder="Enter email address"
                 required
-                name="user_email"
+                name="email"
               />
 
               <label className="support-label">Message</label>
