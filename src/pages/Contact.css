@@ -8,145 +8,184 @@
   overflow: hidden;
 }
 
-.req{
-    text-align: center;
-    padding: 4rem;
-    background: #dae2ae;
+.req {
+  text-align: center;
+  padding: 4rem;
+  background: #dae2ae;
 }
 
-.req h2{
-    font-size: 2.5rem;
-    font-weight: 600;
+.req h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
 }
 
 .req h2 span {
-    font-size: 2rem;
-    color: green;
+  font-size: 2rem;
+  color: green;
 }
 
 .support-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 7rem;
+  background: white;
+}
+
+.support-details {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.support-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.support-icon svg {
+  width: 40px;
+  height: 40px;
+  color: green;
+}
+
+.support-title {
+  margin: 0;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.support-text {
+  margin: 5px 0 0;
+  color: #444;
+}
+
+.support-form {
+  width: 55%;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.support-response {
+  text-align: right;
+  font-style: italic;
+  color: #777;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.support-label {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.support-required {
+  color: red;
+}
+
+.support-input,
+.support-textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.support-textarea {
+  min-height: 100px;
+}
+
+.support-button {
+  margin-top: 15px;
+  background: green;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.support-button:hover {
+  background: rgb(0, 90, 0);
+}
+
+.sent {
+  width: 150px;
+  padding: 0.6rem;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px -1px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 0px 10px -1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 10px -1px rgba(0, 0, 0, 0.75);
+  transition: .3s;
+  position: relative;
+  z-index: 999;
+  top: 0;
+  margin: 0 auto;
+}
+
+.not-sent {
+  width: 150px;
+  padding: 0.6rem;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px -1px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 0px 10px -1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 10px -1px rgba(0, 0, 0, 0.75);
+  transition: .3s;
+  position: relative;
+  z-index: 999;
+  top: 0;
+  margin: 0 auto;
+}
+
+.sent h3 {
+  border-bottom: 3px solid green;
+  z-index: 9999;
+}
+
+.sent h3 {
+  border-bottom: 3px solid red;
+  z-index: 9999;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contact {
+    background: url("../assets/blok.jpg") no-repeat center center/cover;
+  }
+  .head-content {
+    margin-top: 5rem;
+  }
+  .support-wrapper {
+    flex-direction: column;
     align-items: center;
-    padding: 7rem;
-    background: white;
-  }
-  
-  .support-details {
-    width: 40%;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-  }
-  
-  .support-item {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .support-icon svg{
-    width: 40px;
-    height: 40px;
-    color: green;
-  }
-  
-  .support-title {
-    margin: 0;
-    font-size: 20px;
-    font-weight: bold;
-  }
-  
-  .support-text {
-    margin: 5px 0 0;
-    color: #444;
-  }
-  
-  .support-form {
-    width: 55%;
-    background: #fff;
-    padding: 20px;
-    border-radius: 8px;
-  }
-  
-  .support-response {
-    text-align: right;
-    font-style: italic;
-    color: #777;
-  }
-  
-  form {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .support-label {
-    font-weight: bold;
-    margin-top: 10px;
-  }
-  
-  .support-required {
-    color: red;
-  }
-  
-  .support-input,
-  .support-textarea {
-    width: 100%;
     padding: 10px;
-    margin-top: 5px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
   }
-  
-  .support-textarea {
-    min-height: 100px;
-  }
-  
-  .support-button {
-    margin-top: 15px;
-    background: green;
-    color: white;
-    padding: 12px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-  }
-  
-  .support-button:hover {
-    background: rgb(0, 90, 0);
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    .contact{
-      background: url("../assets/blok.jpg") no-repeat center center/cover;
-    }
-    .head-content{
-      margin-top: 5rem;
-    }
-    .support-wrapper {
-      flex-direction: column;
-      align-items: center;
-      padding: 10px;
-    }
-  
-    .support-details, .support-form {
-      width: 100%;
-      align-items: center;
-    }
 
-    .support-item{
-      align-items: center;
-    }
+  .support-details,
+  .support-form {
+    width: 100%;
+    align-items: center;
+  }
 
-    .support-item > div{
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .support-form {
-      margin-top: 20px;
-    }
-  }  
+  .support-item {
+    align-items: center;
+  }
+
+  .support-item > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .support-form {
+    margin-top: 20px;
+  }
+}
