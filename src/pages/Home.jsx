@@ -19,9 +19,9 @@ const Hero = () => {
 
         <div data-aos="fade-up" className="hero-content">
           <h1>
-            <span className="highlight">A Solution-oriented</span>
+            <span className="highlight">Empowering Innovation</span>
             <br />
-            Digital Innovation Firm
+            Through Purposeful Design
           </h1>
           <p>
             We <strong>DESIGN</strong> Products by <strong>OPTIMIZING</strong>{" "}

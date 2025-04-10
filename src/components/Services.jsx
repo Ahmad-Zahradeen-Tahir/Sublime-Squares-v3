@@ -58,12 +58,11 @@ const services = [
     icon: <HelpingHand className="inIcon"/>,
     title: "Training & Development",
     items: [
-      "IT & Cybersecurity Best Practices",
-      "Renewable Energy System Deployment",
-      "Engineering & Technical Skills Development",
-      "Solar Power Installation and Maintenance",
       "Energy Management Techniques",
-      "Automation and System Integration",
+      "IT Skills Training",
+      "STEM Training Programs",
+      "Digital Literacy & Tech Proficiency",
+      "Mentorship and Acceleration",
     ],
   },
   {

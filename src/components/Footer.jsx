@@ -1,6 +1,14 @@
 import React from "react";
 import logo from "../assets/sublime-logo.png";
-import { MessageCircle, Twitter, Instagram, Linkedin, Mail, Phone, Map } from "lucide-react";
+import {
+  MessageCircle,
+  Twitter,
+  Instagram,
+  Linkedin,
+  Mail,
+  Phone,
+  Map,
+} from "lucide-react";
 import "./Footer.css"; // Make sure to create and import this CSS file
 
 const Footer = () => {
@@ -25,9 +33,10 @@ const Footer = () => {
             <span>Sublime Squares</span>
           </div>
           <p>
-            SUBLIME SQUARES LTD is an integrated IT, Telecommunication &
-            Electronic Security company that delivers cutting-edge solutions by
-            selectively partnering with world-renowned technology.
+            SUBLIME SQUARES LTD is a dynamic technology company focused on
+            delivering innovative solutions. We forge strategic partnerships
+            with top global technologies. Our mission is to drive progress and
+            provide cutting-edge solutions for our clients.
           </p>
 
           {/* Social Media Icons */}
@@ -75,9 +84,15 @@ const Footer = () => {
         <div className="footer-column">
           <h3>Contact Us</h3>
           <ul>
-            <li><Map/> No. 340 Molai Road, Maiduguri, Borno State</li>
-            <li><Mail/> info@sublimesquares.ng</li>
-            <li><Phone/> +2348032483081</li>
+            <li>
+              <Map /> No. 340 Molai Road, Maiduguri, Borno State
+            </li>
+            <li>
+              <Mail /> info@sublimesquares.ng
+            </li>
+            <li>
+              <Phone /> +2348032483081
+            </li>
           </ul>
         </div>
       </div>
