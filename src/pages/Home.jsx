@@ -1,4 +1,5 @@
 import Who from "../components/Who";
+import Why from "../components/Why";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -27,7 +28,9 @@ const Hero = () => {
             We <strong>DESIGN</strong> Products by <strong>OPTIMIZING</strong>{" "}
             <strong>Technology</strong> avec <strong>Creativity</strong>!
           </p>
-          <a href="#who" className="cta-button">Discover More</a>
+          <a href="#who" className="cta-button">
+            Discover More
+          </a>
         </div>
 
         <div className="wave-divider">
@@ -43,11 +46,14 @@ const Hero = () => {
       <section id="who">
         <Who />
       </section>
+      <section id="why">
+        <Why />
+      </section>
+      <section id="ourservices">
+        <Services />
+      </section>
       <section id="features">
         <Features />
-      </section>
-      <section>
-        <Services />
       </section>
       <section>
         <PowerSol />

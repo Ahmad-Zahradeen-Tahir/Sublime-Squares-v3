@@ -36,7 +36,7 @@ const About = () => {
           environment for assembling, staging, testing, dispatching, and
           installation of solutions and equipment.
         </p>
-       <a href="#features"><button className="about-button">More About Us</button></a>
+       <a href="#ourservices"><button className="about-button">More About Us</button></a>
       </div>
     </section>
   );
