@@ -6,7 +6,6 @@ import "aos/dist/aos.css";
 import "./Home.css";
 import Features from "../components/Features";
 import Services from "../components/Services";
-import PowerSol from "../components/PowerSol";
 
 const Hero = () => {
   useEffect(() => {
@@ -49,14 +48,11 @@ const Hero = () => {
       <section id="why">
         <Why />
       </section>
-      <section id="ourservices">
-        <Services />
-      </section>
       <section id="features">
         <Features />
       </section>
-      <section>
-        <PowerSol />
+      <section id="ourservices">
+        <Services />
       </section>
     </>
   );
