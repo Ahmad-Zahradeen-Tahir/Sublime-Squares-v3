@@ -14,7 +14,7 @@ import "./Footer.css"; // Make sure to create and import this CSS file
 const Footer = () => {
   return (
     <footer className="footer">
-      {/* Wavy Top Divider */}
+      {/* Wavy Top Divider
       <div className="footer-wave">
         <svg viewBox="0 0 1440 320" xmlns="http://www.w3.org/2000/svg">
           <path
@@ -23,7 +23,7 @@ const Footer = () => {
             d="M0,192L48,170.7C96,149,192,107,288,90.7C384,75,480,85,576,96C672,107,768,117,864,117.3C960,117,1056,107,1152,101.3C1248,96,1344,96,1392,96L1440,96V0H0Z"
           />
         </svg>
-      </div>
+      </div> */}
 
       <div className="footer-container">
         {/* First Column - Logo + Text + Social Media */}

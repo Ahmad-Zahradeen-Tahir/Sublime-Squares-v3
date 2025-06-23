@@ -1,5 +1,5 @@
 import "./Why.css";
-import img from "../assets/cde.jpg";
+import img from "../assets/check.png";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";

@@ -11,7 +11,7 @@
   /* Wavy Divider */
   .footer-wave {
     position: absolute;
-    top: -290px; /* Adjust to move it above the footer */
+    bottom: -290px; /* Adjust to move it above the footer */
     left: 0;
     width: 100%;
     height: auto;
