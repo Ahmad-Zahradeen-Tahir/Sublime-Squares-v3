@@ -1,7 +1,6 @@
 import React from "react";
 import { Server, Code, Shield, HelpingHand, BatteryCharging, HouseWifi, ServerIcon, } from "lucide-react";
 import "./Services.css";
-import "./Powersol.css";
 import { Link } from "react-router-dom";
 
 const services = [
